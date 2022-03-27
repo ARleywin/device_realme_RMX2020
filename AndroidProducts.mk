@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xdroid_RMX2020.mk
+    $(LOCAL_DIR)/nad_RMX2020.mk
 
 COMMON_LUNCH_CHOICES := \
-    xdroid_RMX2020-user \
-    xdroid_RMX2020-userdebug \
-    xdroid_RMX2020-eng
+    nad_RMX2020-user \
+    nad_RMX2020-userdebug \
+    nad_RMX2020-eng

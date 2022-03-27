@@ -21,13 +21,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RMX2020/device.mk)
 
-# Inherit some common xd stuff.
-$(call inherit-product, vendor/xdroid/config/common.mk)
-XDROID_BOOT := 720
-XDROID_MAINTAINER := Arthurleywin
-
+# Nusantara stuff
+TARGET_BOOT_ANIMATION_RES := 720
+NAD_BUILD_TYPE := OFFICIAL
+USE_AOSP_CLOCK := true
+TARGET_SUPPORTS_QUICK_TAP := true
+USE_PIXEL_CHARGING := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+IS_PHONE := true
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := xdroid_RMX2020
+PRODUCT_NAME := nad_RMX2020
 PRODUCT_DEVICE := RMX2020
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme Monet
