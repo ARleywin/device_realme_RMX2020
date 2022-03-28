@@ -30,6 +30,7 @@ USE_PIXEL_CHARGING := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 IS_PHONE := true
 $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := nad_RMX2020
 PRODUCT_DEVICE := RMX2020
@@ -38,7 +39,7 @@ PRODUCT_MODEL := realme Monet
 PRODUCT_MANUFACTURER := realme
 
 # Build info
-BUILD_FINGERPRINT := "google/coral/coral:12/SQ1A.220205.002/8010174:user/release-keys"
+BUILD_FINGERPRINT := "google/coral/coral:12/SP2A.220305.012/8177914/8010174:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=RMX2020 \
     PRODUCT_NAME=RMX2020 \
