@@ -36,10 +36,10 @@ PRODUCT_COMPRESSED_APEX := false
 $(call inherit-product, vendor/realme/RMX2020-ims/RMX2020-ims.mk)
 
 # RealmeDirac
-$(call inherit-product-if-exists, packages/apps/RealmeDirac/dirac.mk)
+$(call inherit-product, $(DEVICE_PATH)/app/RealmeDirac/dirac.mk)
 
 # Parts
-$(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
+$(call inherit-product, $(DEVICE_PATH)/app/RealmeParts/parts.mk)
 
 PRODUCT_SHIPPING_API_LEVEL := 29
 
